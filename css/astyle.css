@@ -1,0 +1,125 @@
+*{
+			margin:0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			background:url(images/bg.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: bottom;
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+		.container{
+			position: relative;
+			width: 100%;
+			color: #fff;
+			max-width: 1000px;
+			min-height: 1000px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			display: grid;
+			grid-template-columns: 1fr;
+			box-shadow: 0 35px 55px rgba(0,0,0,0.8); 
+		}
+		.container .leftside{
+			position: relative;
+			background-color: rgba(000,000,000,0.5);
+			padding:30px; 
+		}
+		.profiletxt{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 30px;
+			border-bottom: 1px solid #fff;
+		}
+		.profiletxt .imgbox{
+			position: relative;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.profiletxt .imgbox img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.profiletxt h2{
+			color: #00ff00;
+			font-size: 1vmin;
+			margin-top: 20px;
+			text-align: center;
+			font-weight: 600;
+			
+		}
+		.profiletxt h2 span{
+			font-size: 2.5vmin;
+			color: #fff;
+			font-weight: 300;
+
+		}
+		.contact{
+			padding: 20px;
+			margin: 10px;
+			background-color: rgba(000,000,000,0.6);
+
+		}
+		.title{
+			color: #00ff00;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 3vmin;
+			font-weight: 600px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.contact ul{
+			position: relative;
+		}
+		.contact ul li{
+			position: relative;
+			align-items: center;
+			list-style: none;
+			font-size: 2.2vmin;
+			margin: 10px 0px;
+			cursor: pointer;
+			color: #fff;
+		}
+		.contact ul li .icon{
+			display: inline-block;
+			width: 30px;
+			border-radius: 50%;
+			font-size: 2.4vmin;
+			color: #00ff00;
+		}
+		.contact ul li .point{
+			color: #00ff00;
+			font-weight: bold;
+
+		}
+
+		@media screen and (max-width: 600px) {
+			.container{
+				margin: 0;
+				grid-template-columns: repeat(1,1fr);
+				box-shadow: none;
+				padding: 0;
+				min-height: 800px;
+			}
+			.profiletxt{
+				padding: 10px;
+			}
+			.container .leftside{
+				padding: 20px;
+			}
+		}
